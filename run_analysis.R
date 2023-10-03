@@ -1,4 +1,3 @@
-
 #load libraries to use
 library(dplyr)
 
@@ -21,5 +20,3 @@ subjet_train <- read.table("dataunzip/UCI HAR Dataset/train/subject_train.txt")
 x_test <- read.table("dataunzip/UCI HAR Dataset/test/X_test.txt")
 y_test <- read.table("dataunzip/UCI HAR Dataset/test/Y_test.txt")
 subjet_test <- read.table("dataunzip/UCI HAR Dataset/test/subject_test.txt")
-
-
