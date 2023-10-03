@@ -20,3 +20,40 @@ subjet_train <- read.table("dataunzip/UCI HAR Dataset/train/subject_train.txt")
 x_test <- read.table("dataunzip/UCI HAR Dataset/test/X_test.txt")
 y_test <- read.table("dataunzip/UCI HAR Dataset/test/Y_test.txt")
 subjet_test <- read.table("dataunzip/UCI HAR Dataset/test/subject_test.txt")
+
+
+features <- read.table("dataunzip/UCI HAR Dataset/features.txt")
+activity_lb <- read.table("dataunzip/UCI HAR Dataset/activity_labels.txt")
+
+
+
+
+
+#merge data
+
+x_total <- rbind(x_test, x_train) #merge rows x_test & x_train
+
+colnames(x_total) <- features[,2] # assign name to cols
+y_total <- rbind(y_test, y_train) # Merge rows in y_test & y_train
+colnames(y_total) <- "activity"   #assign name to cols
+
+unique(y_total$activity)   #review if all data correctly according to activity IDs 
+
+
+subject_total <- rbind(subjet_test, subjet_train) # merge cols subject_train & subject_test
+colnames(subject_total) <- "Iduser"
+#verify if the dimensions of data frames are compatible to merged
+dim(subject_total)
+dim(y_total)
+dim(x_total)
+
+
+#merge all data as: idUser, Xdata(all metrics 561 cols), ydata(kind of activity) 
+total_matrix <- cbind(subject_total, x_total, y_total)
+
+
+
+
+
+
+
