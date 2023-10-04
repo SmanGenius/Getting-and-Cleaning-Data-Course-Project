@@ -1,5 +1,8 @@
 #load libraries to use
 library(dplyr)
+library(readr)
+library(stringr)
+library(sqldf)
 
 #unzip the file
 
@@ -24,6 +27,7 @@ subjet_test <- read.table("dataunzip/UCI HAR Dataset/test/subject_test.txt")
 
 features <- read.table("dataunzip/UCI HAR Dataset/features.txt")
 activity_lb <- read.table("dataunzip/UCI HAR Dataset/activity_labels.txt")
+colnames(activity_lb) <- c("Idactivity", "activity")
 
 
 
@@ -49,11 +53,18 @@ dim(x_total)
 
 
 #merge all data as: idUser, Xdata(all metrics 561 cols), ydata(kind of activity) 
-total_matrix <- cbind(subject_total, x_total, y_total)
+total_matrix <- cbind(subject_total,x_total, y_total)
 
 
+#obtain cols mean an std 
+str_mean <- grep("mean", colnames(total_matrix))
+str_std <- grep("std", colnames(total_matrix))
 
-
+mean_std <- c(str_mean, str_std)
+#select the cols with mean and std deviation data
+data_mean_std <- select(total_matrix,Iduser,activity, mean_std)
+#adding descritive variable to activity ID
+data_activity <- merge(activity_lb,data_mean_std, by.x="Idactivity",by.y = "activity")
 
 
 
