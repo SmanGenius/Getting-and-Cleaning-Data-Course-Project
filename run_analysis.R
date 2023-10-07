@@ -33,7 +33,7 @@ colnames(activity_lb) <- c("Idactivity", "activity")
 
 
 
-#merge data
+#Merge data
 
 x_total <- rbind(x_test, x_train) #merge rows x_test & x_train
 
@@ -68,19 +68,14 @@ data_mean_std <- select(total_matrix,Iduser,activity, mean_std)
 data_activity <- merge(activity_lb,data_mean_std, by.x="Idactivity",by.y = "activity")
 
 std_mean_t <- colnames(data_activity)
-
 data_activity <- select(data_activity, -Idactivity)
 
 colnames(data_activity) <- gsub( '[()]', " ", colnames(data_activity))
+colnames(data_activity) <- gsub( '[-]', " ", colnames(data_activity))
 
 data_activity2 <- data_activity %>%
   group_by(Iduser,activity) %>%
+  summarise_all(mean)
   
-  summarise()
-  
+write.table(data_activity2, "tidyData.txt")
 
-colnames(data_activity) <- gsub( '[()]', " ", colnames(data_activity))
-
-
-
-means <- c("tBodyAcc mean X` = mean(`tBodyAcc mean X`)", "tBodyAcc mean X` = mean(`tBodyAcc mean X`)")
