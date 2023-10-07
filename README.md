@@ -6,6 +6,7 @@ the data is about a Human Activity Recognition, collected by smarphones of 30 su
 
 the completed original data  
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
 The dataset information
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
