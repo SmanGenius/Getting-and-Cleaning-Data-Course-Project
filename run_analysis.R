@@ -51,7 +51,7 @@ dim(subject_total)
 dim(y_total)
 dim(x_total)
 
-
+#1
 #merge all data as: idUser, Xdata(all metrics 561 cols), ydata(kind of activity) 
 total_matrix <- cbind(subject_total,x_total, y_total)
 
@@ -62,9 +62,25 @@ str_std <- grep("std", colnames(total_matrix))
 
 mean_std <- c(str_mean, str_std)
 #select the cols with mean and std deviation data
+#2
 data_mean_std <- select(total_matrix,Iduser,activity, mean_std)
-#adding descritive variable to activity ID
+#adding descriptive variable to activity ID 3 y 4
 data_activity <- merge(activity_lb,data_mean_std, by.x="Idactivity",by.y = "activity")
 
+std_mean_t <- colnames(data_activity)
+
+data_activity <- select(data_activity, -Idactivity)
+
+colnames(data_activity) <- gsub( '[()]', " ", colnames(data_activity))
+
+data_activity2 <- data_activity %>%
+  group_by(Iduser,activity) %>%
+  
+  summarise()
+  
+
+colnames(data_activity) <- gsub( '[()]', " ", colnames(data_activity))
 
 
+
+means <- c("tBodyAcc mean X` = mean(`tBodyAcc mean X`)", "tBodyAcc mean X` = mean(`tBodyAcc mean X`)")
