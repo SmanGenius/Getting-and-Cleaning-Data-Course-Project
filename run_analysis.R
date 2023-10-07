@@ -73,6 +73,7 @@ data_activity <- select(data_activity, -Idactivity)
 colnames(data_activity) <- gsub( '[()]', " ", colnames(data_activity))
 colnames(data_activity) <- gsub( '[-]', " ", colnames(data_activity))
 
+#create a new dataframe with means of all data by user and by activity
 data_activity2 <- data_activity %>%
   group_by(Iduser,activity) %>%
   summarise_all(mean)
