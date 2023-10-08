@@ -5,7 +5,7 @@ This code book is for run_analysis.R as a part of getting and cleaning data proj
 # About the scrip
 
 1. First step is read the data  in .txt format x_train, x_test, y_train, y_test, subject_train, subject_test, features and activity_label
-2. confirm the dimesion of the data an then merge the data train and test of each data (x,y and subject), then asign a name of columns withthe file features.txt
+2. Confirm the dimesion of the data an then merge the data train and test of each data (x,y and subject), then asign a name of columns with the file features.txt that is the name of all measurements 
 3. Obtain the values of mean and std deviation from the merged dataframe
 4. Add a description of variable activityID to with a descriptive of the file activity_label.txt
 5. Delete a col activityId and maitein the activitity with description
