@@ -17,6 +17,7 @@ This code book is for run_analysis.R as a part of getting and cleaning data proj
 
 In the final dataset you can find the next variables.
 
+
  "tBodyAcc mean X"  "tBodyAcc mean Y"  "tBodyAcc mean Z" 
  "tGravityAcc mean X"  "tGravityAcc mean Y"  "tGravityAcc mean Z" 
  "tBodyAccJerk mean X"  "tBodyAccJerk mean Y"  "tBodyAccJerk mean Z" 
@@ -48,6 +49,15 @@ In the final dataset you can find the next variables.
  "tBodyGyroJerk std X" "tBodyGyroJerk std Y" "tBodyGyroJerk std Z" 
  "tBodyAccMag std" "tGravityAccMag std" 
 
+The data was renamed, to describe as 
+
+"t"= " Time",
+"f" = " Frecuency",
+"Acc" = " Acelerometer",
+"Gyro" = " Gyroscope",
+"Mag" = " Magnitude",
+"Body" = " Body",
+ "Freq" = " Frecuency"
 
 
    
