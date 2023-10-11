@@ -18,39 +18,39 @@ This code book is for run_analysis.R as a part of getting and cleaning data proj
 In the final dataset you can find the next variables.
 
 
-"tBodyAcc mean X"  "tBodyAcc mean Y"  "tBodyAcc mean Z" 
-"tGravityAcc mean X"  "tGravityAcc mean Y"  "tGravityAcc mean Z" 
-"tBodyAccJerk mean X"  "tBodyAccJerk mean Y"  "tBodyAccJerk mean Z" 
-"tBodyGyro mean X"  "tBodyGyro mean Y"  "tBodyGyro mean Z" 
-"tBodyGyroJerk mean X"  "tBodyGyroJerk mean Y"  "tBodyGyroJerk mean Z" 
-"tBodyAccMag mean" 
-"tGravityAccMag mean" 
-"tBodyAccJerkMag mean" 
-"tBodyGyroMag mean" 
-"tBodyGyroJerkMag mean" 
-"fBodyAcc mean X"  "fBodyAcc mean Y"  "fBodyAcc mean Z" 
-"fBodyAcc meanFreq X"  "fBodyAcc meanFreq Y"  "fBodyAcc meanFreq Z" 
-"fBodyAccJerk mean X"  "fBodyAccJerk mean Y"  "fBodyAccJerk mean Z"
-"fBodyAccJerk meanFreq X"  "fBodyAccJerk meanFreq Y"  "fBodyAccJerk meanFreq Z" 
-"fBodyGyro mean X"  "fBodyGyro mean Y"  "fBodyGyro mean Z" 
-"fBodyGyro meanFreq X"  "fBodyGyro meanFreq Y"  "fBodyGyro meanFreq Z" 
-"fBodyAccMag mean" 
-"fBodyAccMag meanFreq" 
-"fBodyBodyAccJerkMag mean" 
-"fBodyBodyAccJerkMag meanFreq" 
-"fBodyBodyGyroMag mean" 
-"fBodyBodyGyroMag meanFreq" 
-"fBodyBodyGyroJerkMag mean" 
-"fBodyBodyGyroJerkMag meanFreq" 
-"tBodyAcc std X" "tBodyAcc std Y" "tBodyAcc std Z" 
-"tGravityAcc std X" "tGravityAcc std Y" "tGravityAcc std Z" 
-"tBodyAccJerk std X" "tBodyAccJerk std Y" "tBodyAccJerk std Z" 
-"tBodyGyro std X" "tBodyGyro std Y" "tBodyGyro std Z" 
-"tBodyGyroJerk std X" "tBodyGyroJerk std Y" "tBodyGyroJerk std Z" 
-"tBodyAccMag std" "tGravityAccMag std" 
+1. "tBodyAcc mean X"  "tBodyAcc mean Y"  "tBodyAcc mean Z" 
+2. "tGravityAcc mean X"  "tGravityAcc mean Y"  "tGravityAcc mean Z" 
+3. "tBodyAccJerk mean X"  "tBodyAccJerk mean Y"  "tBodyAccJerk mean Z" 
+4. "tBodyGyro mean X"  "tBodyGyro mean Y"  "tBodyGyro mean Z" 
+5. "tBodyGyroJerk mean X"  "tBodyGyroJerk mean Y"  "tBodyGyroJerk mean Z" 
+6. "tBodyAccMag mean" 
+7. "tGravityAccMag mean" 
+8. "tBodyAccJerkMag mean" 
+9. "tBodyGyroMag mean" 
+10. "tBodyGyroJerkMag mean" 
+11. "fBodyAcc mean X"  "fBodyAcc mean Y"  "fBodyAcc mean Z" 
+12. "fBodyAcc meanFreq X"  "fBodyAcc meanFreq Y"  "fBodyAcc meanFreq Z" 
+13. "fBodyAccJerk mean X"  "fBodyAccJerk mean Y"  "fBodyAccJerk mean Z"
+14. "fBodyAccJerk meanFreq X"  "fBodyAccJerk meanFreq Y"  "fBodyAccJerk meanFreq Z" 
+15. "fBodyGyro mean X"  "fBodyGyro mean Y"  "fBodyGyro mean Z" 
+16. "fBodyGyro meanFreq X"  "fBodyGyro meanFreq Y"  "fBodyGyro meanFreq Z" 
+17. "fBodyAccMag mean" 
+18. "fBodyAccMag meanFreq" 
+19. "fBodyBodyAccJerkMag mean" 
+20. "fBodyBodyAccJerkMag meanFreq" 
+21. "fBodyBodyGyroMag mean" 
+22. "fBodyBodyGyroMag meanFreq" 
+23. "fBodyBodyGyroJerkMag mean" 
+24. "fBodyBodyGyroJerkMag meanFreq" 
+25. "tBodyAcc std X" "tBodyAcc std Y" "tBodyAcc std Z" 
+26. "tGravityAcc std X" "tGravityAcc std Y" "tGravityAcc std Z" 
+27. "tBodyAccJerk std X" "tBodyAccJerk std Y" "tBodyAccJerk std Z" 
+28. "tBodyGyro std X" "tBodyGyro std Y" "tBodyGyro std Z" 
+29. "tBodyGyroJerk std X" "tBodyGyroJerk std Y" "tBodyGyroJerk std Z" 
+30. "tBodyAccMag std" "tGravityAccMag std" 
 
-The data was renamed, to describe as 
-
+The colums names was renamed, to describe as the characteristics as the follow 
+T
 "t"= " Time",
 "f" = " Frecuency",
 "Acc" = " Acelerometer",
@@ -58,6 +58,8 @@ The data was renamed, to describe as
 "Mag" = " Magnitude",
 "Body" = " Body",
  "Freq" = " Frecuency"
+
+ 
 
 
    
