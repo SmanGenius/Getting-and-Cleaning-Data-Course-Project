@@ -16,6 +16,7 @@ This code book is for run_analysis.R as a part of getting and cleaning data proj
 # About the variables.
 
 In the final dataset you can find the next variables.
+
  "tBodyAcc mean X"  "tBodyAcc mean Y"  "tBodyAcc mean Z" 
  "tGravityAcc mean X"  "tGravityAcc mean Y"  "tGravityAcc mean Z" 
  "tBodyAccJerk mean X"  "tBodyAccJerk mean Y"  "tBodyAccJerk mean Z" 
