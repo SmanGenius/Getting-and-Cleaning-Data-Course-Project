@@ -83,13 +83,13 @@ measurements <- colnames(data_activity2)
 measurements[3:81] <- gsubfn(
   "(^t|^f|Acc|^Gyro|^Mag|^Boby|^Freq|\\(\\))",
   list(
-    "t"= " Time ",
-    "f" = " Frecuency ",
-    "Acc" = " Acelerometer ",
-    "Gyro" = " Gyroscope ",
-    "Mag" = " Magnitude ",
-    "Body" = " Body ",
-    "Freq" = " Frecuency "
+    "t"= " Time",
+    "f" = " Frecuency",
+    "Acc" = " Acelerometer",
+    "Gyro" = " Gyroscope",
+    "Mag" = " Magnitude",
+    "Body" = " Body",
+    "Freq" = " Frecuency"
     
     
   ), measurements[3:81]
