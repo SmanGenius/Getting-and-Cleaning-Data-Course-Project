@@ -15,7 +15,7 @@ This code book is for run_analysis.R as a part of getting and cleaning data proj
 
 # About the variables.
 
-In the final dataset you can find the next variables.
+In the final dataset you can find the next variables. for each direction (x,y,z) is a variable
 
 
 1. "tBodyAcc mean X"  "tBodyAcc mean Y"  "tBodyAcc mean Z" 
